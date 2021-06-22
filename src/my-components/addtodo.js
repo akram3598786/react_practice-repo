@@ -21,7 +21,6 @@ export const Addtodo = ({ addtodo }) => {
         }
     }
     return (
-
         <div className="container">
             <form onSubmit={submit}>
                 <div className="form-group">
