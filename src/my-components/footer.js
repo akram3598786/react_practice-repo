@@ -3,8 +3,10 @@ import './style.css';
 
 export default function footer() {
     return (
-        <div className="footer_heading">
+         <footer>
+            <div className="text-center">
             Hi Akky this is footer area
         </div>
+        </footer>
     )
 }

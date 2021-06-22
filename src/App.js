@@ -4,7 +4,15 @@ import Header from "./my-components/header.js";
 import Todos from "./my-components/todos";
 import Footer from "./my-components/footer";
 import { Addtodo } from "./my-components/addtodo";
+import { About } from "./my-components/about";
 import React, { useState, useEffect } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
+
 
 function App() {
 
@@ -55,11 +63,38 @@ function App() {
 
   return (
     <>
-      <Header title="Learnig-React" search_bar={true} />
+      {/* <Header title="Learnig-React" search_bar={true} />
       <Addtodo addtodo={addtodo} />
       <Todos todos={todoslist} ondelete={ondelete} />
-      <Footer />
+      <Footer /> */}
+
+      <Router>
+      <Header title="Learnig-React" search_bar={true} />
+     
+        <Switch>
+                  <Route exact path="/" render = {()=>{
+
+                    return(
+                 
+               <>                  
+                  <Addtodo exact addtodo={addtodo} />
+                  <Todos todos={todoslist} ondelete={ondelete} />
+                  </>
+                   )
+                 
+          }}> 
+          </Route>
+
+          <Route path="/about">
+            <About />
+          </Route>
+
+        </Switch>
+        <Footer />
+    </Router>
     </>
+
+
   );
 
 }

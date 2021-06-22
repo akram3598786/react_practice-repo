@@ -18,14 +18,14 @@ body {
     background: linear-gradient(to bottom, #33ccff 0%, #10ca99 100%);
     margin: 6px;
   }
-  
-  .footer_heading {
-    display: flex;
-    background-color: rgba(39, 15, 15, 0.514);
+    
+  footer{
+    position: absolute;
+    background-color: rgba(39, 17, 17, 0.933);
+    bottom: -200;
     height: 70px;
     width: 100vw;
-    bottom: 0;
-    align-items: center;
+    display: flex;
     justify-content: center;
+    align-items: center;
   }
-  

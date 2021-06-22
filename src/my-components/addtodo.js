@@ -21,30 +21,25 @@ export const Addtodo = ({ addtodo }) => {
         }
     }
     return (
-
-        <div className="container">
+        <div className="container bg-warning my-2">
+            <h5 className="text-center py-3">Add your Todos here</h5>
             <form onSubmit={submit}>
                 <div className="form-group">
                     <label htmlFor="task">Task</label>
                     <input type="text" id="task" className="form-control" aria-describedby="emailHelp" value={task} onChange={(e) => { settask(e.target.value) }} placeholder="Enter Task" />
-                    <small id="" className="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
 
                 <div className="form-group">
                     <label htmlFor="task_name">Task-Name</label>
                     <input type="textl" id="task_name" className="form-control" aria-describedby="emailHelp" value={task_name} onChange={(e) => { settask_name(e.target.value) }} placeholder="Enter Task Name" />
-                    <small id="" className="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
 
                 <div className="form-group">
                     <label htmlFor="members">Members</label>
                     <input type="number" id="members" className="form-control" aria-describedby="emailHelp" value={members} onChange={(e) => { setmembers(e.target.value) }} placeholder="Enter No. Members" />
-                    <small id="" className="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
-
                 <button type="submit" className="btn-sm btn-success my-3">Submit</button>
             </form>
-
         </div>
     )
 }
