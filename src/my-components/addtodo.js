@@ -20,9 +20,10 @@ export const Addtodo = ({ addtodo }) => {
             setmembers("")
         }
     }
-    return (
+    return (          
+
         <div className="container bg-warning my-2">
-            <h5 className="text-center py-3">Add your Todos here</h5>
+        <h5 className="text-center py-3">Add your Todos here</h5>
             <form onSubmit={submit}>
                 <div className="form-group">
                     <label htmlFor="task">Task</label>

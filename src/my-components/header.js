@@ -37,7 +37,6 @@ header.defaultProps = {
   search_bar: false
 }
 
-
 header.propTypes = {
   title: propTypes.string,
   search_bar: propTypes.bool
